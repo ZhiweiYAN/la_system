@@ -1,0 +1,5 @@
+find ./ -name "*.o" |xargs rm -R -v --force
+find ./ -name "*.c" |xargs rm -R -v --force
+find ./ -name "*.h" |xargs rm -R -v --force
+find ./ -name "*.cpp" |xargs rm -R -v --force
+find ./ -name "*.hpp" |xargs rm -R -v --force

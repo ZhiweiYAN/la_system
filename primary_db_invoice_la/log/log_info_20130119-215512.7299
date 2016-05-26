@@ -1,0 +1,46 @@
+Log file created at: 2013/01/19 21:55:12
+Running on machine: DBA
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0119 21:55:12.815845  7299 primary_db_main.c:17] ================BEGIN LOG=================.
+I0119 21:55:12.825459  7299 primary_db_main.c:25] program name: run_gdlian_db_debug_version
+I0119 21:55:12.828107  7299 primary_db_main.c:29] program name with its path name: /mnt/hgfs/tmp/lian/primary_db_invoice_la/run_gdlian_db_debug_version
+I0119 21:55:12.828135  7299 primary_db_start.c:49] ================ Initialization Step I =====================
+I0119 21:55:12.828536  7299 primary_db_start.c:53] Initialize the SERVER MODE TYPE share memory and semaphore:
+I0119 21:55:12.828603  7299 primary_db_start.c:60] [Success!]
+I0119 21:55:12.885746  7299 primary_db_start.c:66] Initialize the PROCESS MANAGMENT share memory and semaphore:
+I0119 21:55:12.885870  7299 primary_db_start.c:73] [Success!]
+I0119 21:55:12.887665  7299 primary_db_start.c:77] ================ Initialization Step II =====================
+I0119 21:55:13.044548  7299 primary_db_start.c:81] Reading parameters from the config file:
+I0119 21:55:13.044605  7299 primary_db_start.c:88] [Success!]
+I0119 21:55:13.045549  7299 primary_db_start.c:92] ================ Initialization Step III =====================
+I0119 21:55:13.045639  7299 primary_db_sync.c:83] Connect to DB:user=pg_recorder password=YjHNGcP8usyX dbname=runningaccounts hostaddr=192.168.122.147
+I0119 21:55:13.067606  7299 primary_db_start.c:99] Testing OWNSELF DB connections:
+I0119 21:55:13.068131  7299 primary_db_start.c:112] [Success!]
+I0119 21:55:13.068959  7299 primary_db_start.c:116] ================ Initialization Step IV =====================
+I0119 21:55:13.070523  7299 primary_db_init.c:105]  Listen port: [26420] has been opened,  BALANCE CHECK PROCESS 
+I0119 21:55:13.070613  7299 primary_db_start.c:126] Initialize the balance communication with business servers :
+I0119 21:55:13.070626  7299 primary_db_start.c:132] [Success!]
+I0119 21:55:13.073271  7299 primary_db_init.c:105]  Listen port: [26410] has been opened,  RECORD PROCESS 
+I0119 21:55:13.073323  7299 primary_db_start.c:141] Initialize the payment/record communication with business servers :
+I0119 21:55:13.073336  7299 primary_db_start.c:148] [Success!]
+I0119 21:55:13.073945  7299 primary_db_init.c:105]  Listen port: [26412] has been opened,  VIEW PROCESS 
+I0119 21:55:13.073972  7299 primary_db_start.c:157] Initialize the query/view communication with business servers :
+I0119 21:55:13.073986  7299 primary_db_start.c:164] [Success!]
+I0119 21:55:13.074813  7299 primary_db_start.c:169] ================ Initialization Step V =====================
+I0119 21:55:13.074813  7299 primary_db_start.c:169] ================ Initialization Step V =====================
+I0119 21:55:13.074813  7299 primary_db_start.c:169] ================ Initialization Step V =====================
+I0119 21:55:13.090775  7299 primary_db_start.c:174] Initialize the CheckSum watchdog process:
+I0119 21:55:13.090867  7299 primary_db_start.c:180] [Success!]
+I0119 21:55:13.107509  7299 primary_db_start.c:187] Start the Server State monitor process:
+I0119 21:55:13.107586  7299 primary_db_start.c:193] [Success!]
+I0119 21:55:13.122611  7299 primary_db_start.c:200] Start the server time counter:
+I0119 21:55:13.122737  7299 primary_db_start.c:206] [Success!]
+I0119 21:55:13.135628  7299 primary_db_start.c:215] Start heart-beat receiving process between databases:
+I0119 21:55:13.135705  7299 primary_db_start.c:221] [Success!]
+I0119 21:55:13.159087  7299 primary_db_start.c:243] Start reporting process with proxy machines:
+I0119 21:55:13.159716  7299 primary_db_start.c:250] [Success!]
+I0119 21:55:13.159749  7299 primary_db_start.c:254] ================ Initialization Step Final =====================
+I0119 21:55:13.159716  7299 primary_db_start.c:250] [Success!]
+I0119 21:55:13.159749  7299 primary_db_start.c:254] ================ Initialization Step Final =====================
+I0119 21:55:13.159716  7299 primary_db_start.c:250] [Success!]
+I0119 21:55:13.159749  7299 primary_db_start.c:254] ================ Initialization Step Final =====================

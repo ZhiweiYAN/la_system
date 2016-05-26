@@ -1,0 +1,4 @@
+Log file created at: 2013/01/19 21:55:13
+Running on machine: DBA
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0119 21:55:13.102932  7304 primary_db_init.c:245] MONITOR_PROCESS

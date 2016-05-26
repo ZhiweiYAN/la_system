@@ -1,0 +1,29 @@
+g++ -c -g -Wall -DDEBUG -I /usr/include/postgresql  primary_db_main.c 
+g++ -c -g -Wall -DDEBUG -I /usr/include/postgresql  primary_db_start.c
+g++ -c -g -Wall -DDEBUG -I /usr/include/postgresql  primary_db_init.c
+g++ -c -g -Wall -DDEBUG -I /usr/include/postgresql  business_data_analysis.c
+g++ -c -g -Wall -DDEBUG shmsem.c
+g++ -c -g -Wall -DDEBUG primary_db_monitor_process.c
+g++ -c -g -Wall -DDEBUG -I /usr/include/postgresql  primary_db_sync.c
+g++ -c -g -Wall -DDEBUG -I /usr/include/postgresql  primary_db_watch_dog.c
+g++ -c -g -Wall -DDEBUG primary_db_comm_proxy.c
+g++ -c -g -Wall -DDEBUG primary_db_comm_database.c
+g++ -c -g -Wall -DDEBUG primary_db_heart_beat.c
+g++ -c -g -Wall -DDEBUG check.c
+g++ -c -g -Wall -DDEBUG ctl_channel.c
+g++ -c -g -Wall -DDEBUG longlink.c
+g++ -c -g -Wall -DDEBUG config.c
+g++ -c -g -Wall -DDEBUG parse_pkt_common.c
+g++ -c -g -Wall -DDEBUG parse_pkt_common_header.c
+g++ -c -g -Wall -DDEBUG -I /usr/include/postgresql  primary_db_record.c
+g++ -c -g -Wall -DDEBUG -I /usr/include/postgresql  primary_db_view.c
+g++ -c -g -Wall -DDEBUG multi_recvsend.c
+g++ -c -g -Wall -DDEBUG -I /usr/include/postgresql  primary_db_cas.c
+g++ -c -g -Wall -DDEBUG primary_db_error.c 
+g++ -L /usr/lib -lpq -L /usr/lib -lglog -o run_db \
+	primary_db_main.o primary_db_start.o primary_db_init.o business_data_analysis.o \
+	shmsem.o primary_db_monitor_process.o primary_db_sync.o primary_db_watch_dog.o \
+	primary_db_comm_proxy.o primary_db_comm_database.o primary_db_heart_beat.o \
+	check.o ctl_channel.o longlink.o config.o parse_pkt_common.o \
+	parse_pkt_common_header.o primary_db_record.o primary_db_view.o \
+	multi_recvsend.o  primary_db_cas.o primary_db_error.o 

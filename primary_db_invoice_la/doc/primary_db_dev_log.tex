@@ -1,0 +1,35 @@
+\documentclass[12pt]{YzwReadingEN} % Default font size is 12pt, it can be changed here
+\usepackage{framed, color}
+\definecolor{shadecolor}{gray}{0.90}
+\title{Primary DB Development LOG}
+\begin{document}
+
+\maketitle
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+%\tableofcontents % Include a table of contents
+\section{2013-01-18}
+{Heart Beat Packets (HBP) between DB servers}
+\begin{itemize}
+\item The Main DB receives the HBP from its SLAVE\_DB.
+\item The SLAVE DB sends the HBP to the Main\_DB.
+\end{itemize}
+
+
+Monitor process:
+I add a display function to print the available slot number on the screen.
+
+Why Su rui adds the function Zero\_Lifetime\_Record\_Process() ?
+He will execute the function if some process is killed by the monitor process.
+
+The encoding of all program and database configuration should be SET as UTF-8.
+
+\section{2013-01-19}
+For pgDB users, there are two users. The first user named `pg\_recorder' just has the `INSERT' right. 
+The second user named `pg\_viewer' just has the `SELECT' right.
+
+The IP address from which the business should be verified.
+
+
+\end{document}

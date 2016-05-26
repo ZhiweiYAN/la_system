@@ -1,0 +1,5 @@
+Log file created at: 2013/01/19 21:55:13
+Running on machine: DBA
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0119 21:55:13.132829  7308 primary_db_init.c:363] RECVBH_PROCESS
+I0119 21:55:13.149056  7308 primary_db_heart_beat.c:227] Ready to accept the heartbeat pkt form brother server at port: 26416
